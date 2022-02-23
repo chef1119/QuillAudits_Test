@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.mint-amount {
+    background-color: #202342;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    opacity: 0.7;
+}
+.mint-amount:focus {
+    background-color: #202342;
+    color: white;
+}
+.mint-amount::-webkit-inner-spin-button {
+    display: none;
+}
+
+.slide-show {
+    height: 20%;
+    width: 100%;
+}
+
+.landing-logo {
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.upper-text {
+    margin-top: 15px;
+    font-family: "Josefin Sans";
+    font-weight: bold;
+}
+
+.price {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    color : yellow;
+}
+
+.modal-oval {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5 !important; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+div[data-testid] {
+    justify-content: center;
+}
+
+.modal-oval-content {
+    background-color: transparent;
+    margin: auto;
+    margin-top: 15%;
+    padding: 20px;
+    border: none;
+    width: 80%;
+}
+
+.minus-btn {
+    background: -webkit-linear-gradient(-65deg, #c165dd 0%, #1153fc 100%);
+    font-weight: 15;
+    border: none;
+    padding: 0px;
+    width: 40px;
+}
+.minus-btn:active {
+    background: -webkit-linear-gradient(-65deg, #1153fc 0%, #c165dd 100%);
+}
+
+.plus-btn {
+    background: -webkit-linear-gradient(-65deg, #c165dd 0%, #1153fc 100%);
+    font-weight: 5;
+    border: none;
+    padding: 0px;
+    width: 40px;
+}
+
+.dropdown-menu {
+    border-radius: 30px;
+    background-color: #c165dd;
+}
+.dropdown-item {
+    color: white;
+}
+.dropdown-item:hover {
+    background-color: transparent;
+}
+
+
+.plus-btn:active {
+    background: -webkit-linear-gradient(-65deg, #1153fc 0%, #c165dd 100%);
+}
+
+@media only screen and (max-width: 420px) {
+    .landing-logo {
+        width: 90%;
+    }
+    .mint-amount {
+        width: 50% !important;
+    }
+}

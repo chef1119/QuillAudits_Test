@@ -1,0 +1,44 @@
+.coinracer-header {
+  background-color: transparent;
+  opacity: 0.8;
+  width: 100%;
+
+  &__logo {
+    height: 55px;
+    margin:15px 15px 15px 20px;
+    opacity: 1 !important;
+    z-index: 5 !important;
+  }
+
+  &__connect-wallet-btn{
+    border-radius: 25px;
+    border-width: 1px;
+    border-color: #9c9dac;
+    background-color: transparent;
+    color: white;
+    transform: perspective(1px) translateZ(0);
+  }
+  
+  &__connect-wallet-btn:hover, &__connect-wallet-btn:active, &__connect-wallet-btn:checked {
+    background-color:transparent !important;
+    color: white !important;
+    transform: perspective(1px) translateZ(0);
+  }
+  // .connect-button {
+  //   border: 0px;
+  //   border-radius: 16px;
+  //   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  //   cursor: pointer;
+  //   background-color: rgb(31, 115, 212);
+  //   color: white;
+  // }
+  
+  // .connect-button:hover {
+  //   border-color: gray;
+  // }
+  
+  &__wallet-icon {
+    margin-right: 10px;
+  }
+}
+  
