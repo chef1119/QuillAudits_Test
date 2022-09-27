@@ -19,11 +19,11 @@ const Main = () => {
     // let amountInput = React.createRef();
 
     const getPrice = async () => {
-        let busd : any = await wrapper?.getBusdPrice();
+        //let busd : any = await wrapper?.getBusdPrice();
         let crace : any = await wrapper?.getCracePrice();
         let currentAmount : any = await wrapper?.getCurrentAmount();
         let nftMaxAmount : any = await wrapper?.getMaxAmount();
-        setBusdPrice( parseInt(busd) / (10 ** 18) );
+        //setBusdPrice( parseInt(busd) / (10 ** 18) );
         setCracePrice( parseInt(crace) / (10 ** 18) );
         setCurrentAmount(currentAmount);
         setMaxAmount(nftMaxAmount);
@@ -70,7 +70,7 @@ const Main = () => {
 
     return (
         <>
-            <h3 className='price'>1 NFT CAR = {busdPrice} $BUSD + {cracePrice} $CRACE</h3>
+            <h3 className='price'>1 NFT CAR = {cracePrice} $CRACE</h3>
             <div className="d-flex mt-5 justify-content-center">
                 <Button className="minus-btn" onClick={minusAmount}>-</Button>
                 <Form.Control type="number" onChange={amountChange} className="mint-amount" value={amount} placeholder="Amount" min="0" max="5">

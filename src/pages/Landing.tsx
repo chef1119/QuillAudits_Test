@@ -27,8 +27,9 @@ const Landing = () => {
           <Row className="text-center body-bg d-flex justify-content-between">
           <img src={Logo} className="landing-logo" alt="Logo" />
             <h1 className="upper-text">
-              2.0&nbsp;
-              <span>Collection</span>
+              QuillAudits&nbsp;
+              <span>Test</span>
+              &nbsp;NFT
               &nbsp;Mint
             </h1>
             <div className="pt-4 px-2">
@@ -43,7 +44,7 @@ const Landing = () => {
                     </div>
                   ):(
                     Number(chainId) !== Number(defaultChainId)?
-                      <h1 className="price">Please try on BSC Mainnet</h1>
+                      <h1 className="price">Please try on BSC Testnet</h1>
                     :
                     <Main />
                   )

@@ -28,7 +28,6 @@ export default class Web3Wrapper {
       web3, chainId, account,
       ...options
     }
-    console.log("chainid =======> ", this.chainId);
     this.coinracerNFT = new CoinracerNFT(this.wrapperOptions, addresses.coinracerNFT[this.chainId]);
     this.coinracerToken = new CoinracerToken(this.wrapperOptions, addresses.coinracerToken[this.chainId]);
     this.busdToken = new BusdToken(this.wrapperOptions, addresses.busdToken[this.chainId]);
@@ -64,13 +63,13 @@ export default class Web3Wrapper {
   }
 
   async mint(amount) {
-    const busdString : any = await this.coinracerNFT.call("minBUSD");
+    //const busdString : any = await this.coinracerNFT.call("minBUSD");
     const craceString : any = await this.coinracerNFT.call("minCRACE");
-    let busd : BN = Web3.utils.toBN(busdString);
+    //let busd : BN = Web3.utils.toBN(busdString);
     let crace : BN = Web3.utils.toBN(craceString);
     let amount1 : BN = Web3.utils.toBN(amount);
     await this.coinracerToken.send("approve", {}, addresses.coinracerNFT[this.chainId], crace.mul(amount1));
-    await this.busdToken.send("approve", {}, addresses.coinracerNFT[this.chainId], busd.mul(amount1));
+    //await this.busdToken.send("approve", {}, addresses.coinracerNFT[this.chainId], busd.mul(amount1));
     try {
       await this.coinracerNFT.send("mint", {}, amount);
       return 1;

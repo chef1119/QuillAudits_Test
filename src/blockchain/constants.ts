@@ -1,4 +1,4 @@
-export const defaultChainId = 56;
+export const defaultChainId = 97;
 
 export const rpcUrls = {
   1337: 'http://localhost:8545',
@@ -17,7 +17,7 @@ export const networkNames = {
 
 export const addresses = {
   coinracerNFT: {
-    97: '0x8070c987d80B1363710BF53998C9078ebD75A05B',
+    97: '0x8388EBd5D5DDB321d4e2673af1dfDD382F9141a5',
     56: '0x1B967351e96Bc52E7f4c28EB97406bfa7eB8c8b2'
   },
   coinracerToken: {

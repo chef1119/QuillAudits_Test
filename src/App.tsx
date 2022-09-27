@@ -21,7 +21,7 @@ const App = () => (
         <Route exact path="/" component={Landing} />
       </Switch>
 
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>  
     <NotificationContainer />
   </Providers>
